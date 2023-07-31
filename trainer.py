@@ -260,7 +260,7 @@ class GANTrainer(object):
         
         save_model(netG, netD, self.max_epoch, self.model_dir)
         
-        self.summary_writer.close()
+        # self.summary_writer.close()
 
     def sample(self, datapath, stage=1):
         if stage == 1:
